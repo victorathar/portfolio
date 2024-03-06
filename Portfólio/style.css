@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+/* font-family: "JetBrains Mono", monospace; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "JetBrains Mono", monospace;
+
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+:root {
+    --cor-tema: #080808;
+    --cor-secundaria: #131313;
+    --cor-de-texto: #ffffff;
+    --cor-principal: #00ffee;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 5% 4rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--cor-de-texto);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3 ease;
+    text-shadow: 0 0 25px var(--cor-principal)
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-right: 12%;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--cor-de-texto);
+    margin: 0 2%;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--cor-principal);
+    border-bottom: 3px solid var(--cor-principal);
+}
+
+body {
+    background-color: var(--cor-tema);
+    color: var(--cor-de-texto);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--cor-principal);
+    display: none;
+}
+
+
+
+
+
+#home {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.home-esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    width: 65%;
+    height: 40%;
+}
+
+.home-esquerda-titulo {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 4.95rem;
+    font-weight: bolder;
+    text-align: left;
+    margin: 3% 0;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #01554f, #00ffee, #01554f);
+    background-size: 400% 100%;
+    animation: destaque 4s ease-in-out infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-esquerda-subtitulo {
+    display: flex;
+    padding-right: 65%;
+    font-size: 2.5rem;
+    color: var(--cor-principal);
+    text-shadow: 0 0 25px var(--cor-de-texto)
+}
+
+@keyframes destaque {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 400%;
+    }
+
+}
+
+.home-esquerda-paragrafo {
+    font-size: 2rem;
+    color: var(--cor-de-texto);
+    margin: 3% 0;
+}
+
+.home-contatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    height: 20%;
+}
+
+
+
+.icone {
+    border-radius: 100%;
+    border: 2px solid var(--cor-de-texto);
+    font-size: 4rem;
+    color: var(--cor-de-texto);
+    text-shadow: 0 0 30px var(--cor-de-texto);
+    padding: 20%;
+}
+
+.icone:hover {
+    border-radius: 100%;
+    border: 2px solid var(--cor-principal);
+    font-size: 4rem;
+    color: var(--cor-principal);
+    text-shadow: 0 0 60px var(--cor-de-texto);
+    padding: 20%;
+}
+
+.home-direita-foto {
+    border-radius: 100%;
+    box-shadow: 0 0 50px var(--cor-principal);
+    cursor: pointer;
+    transition: 0.4 ease-in-out;
+}
+
+
+
+
+/*---------------------- SOBRE MIM ----------------------*/
+
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.sobre-mim-titulo{
+    width: 9%;
+    font-size: 3rem;
+    padding: 0.5% 0;
+    border-bottom: 3px solid #00ffee;
+    margin-left: 10%;
+    color: var(--cor-de-texto);
+    text-shadow: 0 0 30px var(--cor-principal);
+}
+
+.sobre-mim-p{
+    margin: 5%;
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    border: 3px solid var(--cor-secundaria);
+}
+
+.sobre-mim-paragrafo{
+    margin: 4% 5%;
+    font-size: 2rem;
+}
+
+
+/*---------------------- PROJETOS ----------------------*/
+
+
+
+#projetos {
+    display: flex;
+    background-color: #DDDDDD;
+    width: 100%;
+    height: 100vh;
+}
