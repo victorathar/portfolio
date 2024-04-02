@@ -1,2 +1,2 @@
 <HTML>
-Portfólio criado em HTML para demonstrar minhas habiliadades em cada área da programação
+Portfólio criado em HTML feito com o intuito de criar uma introdução as minhas habilidades
